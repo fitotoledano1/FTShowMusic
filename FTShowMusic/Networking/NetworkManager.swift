@@ -16,7 +16,7 @@ class NetworkManager {
     /// Makes a network call with URLSession
     func fetchPlaylists(completion: @escaping (Result<APIResponse, FTError>) -> Void) {
         
-        // verifying whether the URL exists, or else returns a specific error to the user
+        // Verifying whether the URL exists, or else returns a specific error to the console.
         guard let url = URL(string: Constants.endpoint) else {
             completion(.failure(.invalidUrl))
             return
@@ -24,20 +24,19 @@ class NetworkManager {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error == nil {
-                
-                // verifying whether the status code is 200-OK
+                // Verifying whether the status code is 200-OK.
                 guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                     completion(.failure(.invalidResponse))
                     return
                 }
                 
-                // verifying if the data received from the servers matches my APIResponse model
+                // Verifying if the data received from the servers matches my APIResponse model.
                 guard let data = data else {
                     completion(.failure(.invalidData))
                     return
                 }
                 
-                // decoding the JSON with Codable
+                // Decoding the JSON with Codable.
                 do {
                     let apiResponse = try JSONDecoder().decode(APIResponse.self, from: data)
                     completion(.success(apiResponse))
@@ -49,7 +48,7 @@ class NetworkManager {
                 print("There was an error completing the URL ")
                 completion(.failure(.unableToComplete))
             }
-        }.resume() // starts the data task.
+        }.resume() // Resumes the data task.
         
     }
     

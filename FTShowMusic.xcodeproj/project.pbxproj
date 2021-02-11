@@ -8,18 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		B03A59A625D57351009BC164 /* FTShowMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59A525D57351009BC164 /* FTShowMusicApp.swift */; };
-		B03A59A825D57351009BC164 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59A725D57351009BC164 /* ContentView.swift */; };
+		B03A59A825D57351009BC164 /* FTPlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59A725D57351009BC164 /* FTPlaylistsView.swift */; };
 		B03A59AA25D57352009BC164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03A59A925D57352009BC164 /* Assets.xcassets */; };
 		B03A59AD25D57352009BC164 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03A59AC25D57352009BC164 /* Preview Assets.xcassets */; };
+		B03A59B725D57502009BC164 /* FTPlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59B625D57502009BC164 /* FTPlaylistRow.swift */; };
+		B03A59BA25D57605009BC164 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59B925D57605009BC164 /* NetworkManager.swift */; };
+		B03A59BE25D578A4009BC164 /* FTPlaylistsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59BD25D578A4009BC164 /* FTPlaylistsViewModel.swift */; };
+		B03A59D325D57AFE009BC164 /* FTAlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03A59D225D57AFE009BC164 /* FTAlbumCell.swift */; };
+		B077FF4025D57D100072A861 /* FTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF3F25D57D100072A861 /* FTError.swift */; };
+		B077FF4525D57D490072A861 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF4425D57D490072A861 /* Playlist.swift */; };
+		B077FF4925D57D5B0072A861 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF4825D57D5B0072A861 /* Album.swift */; };
+		B077FF4D25D57EC90072A861 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF4C25D57EC90072A861 /* MockData.swift */; };
+		B077FF5025D580150072A861 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF4F25D580150072A861 /* ImageLoader.swift */; };
+		B077FF5325D581D20072A861 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF5225D581D20072A861 /* APIResponse.swift */; };
+		B077FF5825D5955A0072A861 /* ImageWithUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF5725D5955A0072A861 /* ImageWithUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B03A59A225D57351009BC164 /* FTShowMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTShowMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03A59A525D57351009BC164 /* FTShowMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTShowMusicApp.swift; sourceTree = "<group>"; };
-		B03A59A725D57351009BC164 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B03A59A725D57351009BC164 /* FTPlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPlaylistsView.swift; sourceTree = "<group>"; };
 		B03A59A925D57352009BC164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B03A59AC25D57352009BC164 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B03A59AE25D57352009BC164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03A59B625D57502009BC164 /* FTPlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPlaylistRow.swift; sourceTree = "<group>"; };
+		B03A59B925D57605009BC164 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B03A59BD25D578A4009BC164 /* FTPlaylistsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTPlaylistsViewModel.swift; sourceTree = "<group>"; };
+		B03A59D225D57AFE009BC164 /* FTAlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTAlbumCell.swift; sourceTree = "<group>"; };
+		B077FF3F25D57D100072A861 /* FTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTError.swift; sourceTree = "<group>"; };
+		B077FF4425D57D490072A861 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		B077FF4825D57D5B0072A861 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B077FF4C25D57EC90072A861 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B077FF4F25D580150072A861 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B077FF5225D581D20072A861 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		B077FF5725D5955A0072A861 /* ImageWithUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +74,15 @@
 		B03A59A425D57351009BC164 /* FTShowMusic */ = {
 			isa = PBXGroup;
 			children = (
-				B03A59A525D57351009BC164 /* FTShowMusicApp.swift */,
-				B03A59A725D57351009BC164 /* ContentView.swift */,
-				B03A59A925D57352009BC164 /* Assets.xcassets */,
 				B03A59AE25D57352009BC164 /* Info.plist */,
+				B03A59A525D57351009BC164 /* FTShowMusicApp.swift */,
+				B03A59A925D57352009BC164 /* Assets.xcassets */,
+				B077FF3E25D57D010072A861 /* Helpers */,
+				B077FF4325D57D420072A861 /* Models */,
+				B03A59CE25D578DB009BC164 /* Networking */,
 				B03A59AB25D57352009BC164 /* Preview Content */,
+				B03A59C725D578C6009BC164 /* ViewModel */,
+				B03A59C425D578BE009BC164 /* Views */,
 			);
 			path = FTShowMusic;
 			sourceTree = "<group>";
@@ -67,6 +93,53 @@
 				B03A59AC25D57352009BC164 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B03A59C425D578BE009BC164 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59A725D57351009BC164 /* FTPlaylistsView.swift */,
+				B03A59B625D57502009BC164 /* FTPlaylistRow.swift */,
+				B03A59D225D57AFE009BC164 /* FTAlbumCell.swift */,
+				B077FF5725D5955A0072A861 /* ImageWithUrl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B03A59C725D578C6009BC164 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59BD25D578A4009BC164 /* FTPlaylistsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B03A59CE25D578DB009BC164 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59B925D57605009BC164 /* NetworkManager.swift */,
+				B077FF4F25D580150072A861 /* ImageLoader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B077FF3E25D57D010072A861 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B077FF3F25D57D100072A861 /* FTError.swift */,
+				B077FF4C25D57EC90072A861 /* MockData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B077FF4325D57D420072A861 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B077FF4425D57D490072A861 /* Playlist.swift */,
+				B077FF4825D57D5B0072A861 /* Album.swift */,
+				B077FF5225D581D20072A861 /* APIResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +211,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03A59A825D57351009BC164 /* ContentView.swift in Sources */,
+				B03A59BA25D57605009BC164 /* NetworkManager.swift in Sources */,
+				B03A59B725D57502009BC164 /* FTPlaylistRow.swift in Sources */,
+				B077FF4025D57D100072A861 /* FTError.swift in Sources */,
+				B077FF4525D57D490072A861 /* Playlist.swift in Sources */,
+				B03A59A825D57351009BC164 /* FTPlaylistsView.swift in Sources */,
+				B077FF5325D581D20072A861 /* APIResponse.swift in Sources */,
+				B077FF5025D580150072A861 /* ImageLoader.swift in Sources */,
+				B077FF5825D5955A0072A861 /* ImageWithUrl.swift in Sources */,
+				B077FF4925D57D5B0072A861 /* Album.swift in Sources */,
 				B03A59A625D57351009BC164 /* FTShowMusicApp.swift in Sources */,
+				B03A59BE25D578A4009BC164 /* FTPlaylistsViewModel.swift in Sources */,
+				B03A59D325D57AFE009BC164 /* FTAlbumCell.swift in Sources */,
+				B077FF4D25D57EC90072A861 /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

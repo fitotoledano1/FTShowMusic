@@ -11,7 +11,7 @@ import SwiftUI
 struct FTShowMusicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FTPlaylistsView()
         }
     }
 }

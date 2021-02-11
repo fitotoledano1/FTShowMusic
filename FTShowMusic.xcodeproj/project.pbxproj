@@ -22,6 +22,7 @@
 		B077FF5025D580150072A861 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF4F25D580150072A861 /* ImageLoader.swift */; };
 		B077FF5325D581D20072A861 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF5225D581D20072A861 /* APIResponse.swift */; };
 		B077FF5825D5955A0072A861 /* ImageWithUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF5725D5955A0072A861 /* ImageWithUrl.swift */; };
+		B077FF5B25D5AAD20072A861 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077FF5A25D5AAD20072A861 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B077FF4F25D580150072A861 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		B077FF5225D581D20072A861 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		B077FF5725D5955A0072A861 /* ImageWithUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithUrl.swift; sourceTree = "<group>"; };
+		B077FF5A25D5AAD20072A861 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				B077FF3F25D57D100072A861 /* FTError.swift */,
 				B077FF4C25D57EC90072A861 /* MockData.swift */,
+				B077FF5A25D5AAD20072A861 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				B077FF4925D57D5B0072A861 /* Album.swift in Sources */,
 				B03A59A625D57351009BC164 /* FTShowMusicApp.swift in Sources */,
 				B03A59BE25D578A4009BC164 /* FTPlaylistsViewModel.swift in Sources */,
+				B077FF5B25D5AAD20072A861 /* Constants.swift in Sources */,
 				B03A59D325D57AFE009BC164 /* FTAlbumCell.swift in Sources */,
 				B077FF4D25D57EC90072A861 /* MockData.swift in Sources */,
 			);

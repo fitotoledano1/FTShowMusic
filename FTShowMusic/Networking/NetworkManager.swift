@@ -13,13 +13,11 @@ class NetworkManager {
     private init() {}
     static let shared = NetworkManager()
     
-    // Endpoint Provided by Showpad for this take-home assignment
-    private let endpoint = "https://hes75mx2r3.execute-api.eu-central-1.amazonaws.com/prod/library"
-    
+    /// Makes a network call with URLSession
     func fetchPlaylists(completion: @escaping (Result<APIResponse, FTError>) -> Void) {
         
         // verifying whether the URL exists, or else returns a specific error to the user
-        guard let url = URL(string: endpoint) else {
+        guard let url = URL(string: Constants.endpoint) else {
             completion(.failure(.invalidUrl))
             return
         }

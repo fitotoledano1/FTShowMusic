@@ -20,7 +20,14 @@ struct FTPlaylistsView: View {
                                   albums: viewModel.filterAlbums(for: playlist))
                 }
             }
-            .navigationTitle("Playlists")   
+            .navigationTitle("Playlists")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button("Reload") {
+                        viewModel.fetchPlaylists()
+                    }
+                }
+            }
         }.onAppear {
             viewModel.fetchPlaylists()
         }

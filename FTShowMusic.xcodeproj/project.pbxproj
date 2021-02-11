@@ -101,10 +101,10 @@
 		B03A59C425D578BE009BC164 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B03A59A725D57351009BC164 /* FTPlaylistsView.swift */,
-				B03A59B625D57502009BC164 /* FTPlaylistRow.swift */,
-				B03A59D225D57AFE009BC164 /* FTAlbumCell.swift */,
-				B077FF5725D5955A0072A861 /* ImageWithUrl.swift */,
+				B07C045A25D5AE2700E723DB /* Lists */,
+				B07C045C25D5AE2B00E723DB /* Rows */,
+				B07C045E25D5AE2E00E723DB /* Cells */,
+				B07C046025D5AE3500E723DB /* Images */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +143,38 @@
 				B077FF5225D581D20072A861 /* APIResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B07C045A25D5AE2700E723DB /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59A725D57351009BC164 /* FTPlaylistsView.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		B07C045C25D5AE2B00E723DB /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59B625D57502009BC164 /* FTPlaylistRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		B07C045E25D5AE2E00E723DB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B03A59D225D57AFE009BC164 /* FTAlbumCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B07C046025D5AE3500E723DB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B077FF5725D5955A0072A861 /* ImageWithUrl.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

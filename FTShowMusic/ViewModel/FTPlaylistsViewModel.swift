@@ -16,8 +16,16 @@ class FTPlaylistsViewModel: ObservableObject {
     
     /// Making the network call to the Showpad API and safely handling its result.
     func fetchPlaylists() {
+        
         NetworkManager.shared.fetchPlaylists { [weak self] result in
             guard let self = self else { return }
+            
+            // Removing previous data in case there was an error loading and the user wants to try again.
+            self.playlists.removeAll(keepingCapacity: true)
+            self.albums.removeAll(keepingCapacity: true)
+            self.filterredAlbums.removeAll(keepingCapacity: true)
+            
+            // Rx: the change in data will provoke changes in the UI, so I call the Main thread.
             DispatchQueue.main.async {
                 switch result {
                 case .success(let response):

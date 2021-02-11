@@ -78,6 +78,7 @@
 			children = (
 				B03A59AE25D57352009BC164 /* Info.plist */,
 				B03A59A525D57351009BC164 /* FTShowMusicApp.swift */,
+				B077FF5A25D5AAD20072A861 /* Constants.swift */,
 				B03A59A925D57352009BC164 /* Assets.xcassets */,
 				B077FF3E25D57D010072A861 /* Helpers */,
 				B077FF4325D57D420072A861 /* Models */,
@@ -130,7 +131,6 @@
 			children = (
 				B077FF3F25D57D100072A861 /* FTError.swift */,
 				B077FF4C25D57EC90072A861 /* MockData.swift */,
-				B077FF5A25D5AAD20072A861 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";

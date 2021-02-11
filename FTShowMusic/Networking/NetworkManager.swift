@@ -31,6 +31,7 @@ class NetworkManager {
                     return
                 }
                 
+                // verifying if the data received from the servers matches my APIResponse model
                 guard let data = data else {
                     completion(.failure(.invalidData))
                     return
